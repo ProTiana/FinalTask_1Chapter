@@ -31,5 +31,13 @@ string[] CreateNewArray(string[] arr, int newArrlength, int n)
     }
     return newarray;
 }
+void PrintArray(string[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write($"{arr[i]} ");
+
+    }
+}
 
 
