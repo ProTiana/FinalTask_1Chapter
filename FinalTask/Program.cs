@@ -1,4 +1,5 @@
-﻿string[] array = new string[] { "blue", "red", "white", "gren" };
+﻿
+string[] array = new string[] { "blue", "red", "white", "gren" };
 int StringLength = 3;
 
 int FindNextArrayLength(string[] arr, int n)
@@ -41,6 +42,5 @@ void PrintArray(string[] arr)
 }
 
 int arraylength = FindNextArrayLength(array, StringLength);
-Console.WriteLine(arraylength);
 string[] Result = CreateNewArray(array, arraylength, StringLength);
 PrintArray(Result);
