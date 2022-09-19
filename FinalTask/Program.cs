@@ -1,5 +1,6 @@
 ﻿string[] array = new string[] { "blue", "red", "white", "gren" };
-int StringLength = 3;
+Console.WriteLine("Enter String length");
+int StringLength = Convert.ToInt32(Console.ReadLine());
 
 int FindNextArrayLength(string[] arr, int n)
 {
@@ -41,6 +42,6 @@ void PrintArray(string[] arr)
 }
 
 int arraylength = FindNextArrayLength(array, StringLength);
-Console.WriteLine(arraylength);
+Console.WriteLine($"The array lenght is {arraylength}");
 string[] Result = CreateNewArray(array, arraylength, StringLength);
 PrintArray(Result);
