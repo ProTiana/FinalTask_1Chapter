@@ -1,9 +1,6 @@
 ﻿string[] array = new string[] { "blue", "red", "white", "gren" };
 int StringLength = 3;
 
-//Console.WriteLine("Enter string length"); - 
-//int StringLength = Convert.ToInt32(Console.ReadLine());
-
 int FindNextArrayLength(string[] arr, int n)
 {
     int count = 0;
@@ -17,7 +14,7 @@ int FindNextArrayLength(string[] arr, int n)
     return count;
 }
 
- string[] CreateNewArray(string[] arr, int newArrlength, int n)
+string[] CreateNewArray(string[] arr, int newArrlength, int n)
 {
 
     string[] newarray = new string[newArrlength];
@@ -32,4 +29,13 @@ int FindNextArrayLength(string[] arr, int n)
         }
     }
     return newarray;
+}
+
+void PrintArray(string[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write($"{arr[i]} ");
+
+    }
 }
