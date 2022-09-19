@@ -39,5 +39,8 @@ void PrintArray(string[] arr)
 
     }
 }
+int arraylength = FindNextArrayLength(array, StringLength);
+string[] Result = CreateNewArray(array, arraylength, StringLength);
+PrintArray(Result);
 
 
