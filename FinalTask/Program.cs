@@ -39,3 +39,8 @@ void PrintArray(string[] arr)
 
     }
 }
+
+int arraylength = FindNextArrayLength(array, StringLength);
+Console.WriteLine(arraylength);
+string[] Result = CreateNewArray(array, arraylength, StringLength);
+PrintArray(Result);
